@@ -1,24 +1,29 @@
 module.exports = (lineman) ->
+  app = lineman.config.application
+
   files:
     less:
+      main: "app/css/main.less"
       app: "app/css/**/*.less"
       vendor: "vendor/css/**/*.less"
-      generatedApp: "generated/css/app.less.css"
-      generatedVendor: "generated/css/vendor.less.css"
+      generated: "generated/css/app.less.css"
 
   config:
-    loadNpmTasks: lineman.config.application.loadNpmTasks.concat('grunt-contrib-less')
+    loadNpmTasks: app.loadNpmTasks.concat('grunt-contrib-less')
 
     prependTasks:
-      common: lineman.config.application.prependTasks.common.concat(["less"])
+      common: app.prependTasks.common.concat("less")
 
     less:
       options:
         paths: ["app/css", "vendor/css"]
       compile:
         files:
-          "<%= files.less.generatedVendor %>": "<%= files.less.vendor %>"
-          "<%= files.less.generatedApp %>": "<%= files.less.app %>"
+          "<%= files.less.generated %>": "<%= files.less.main %>"
+
+    concat_sourcemap:
+      css:
+        src: ["<%= files.less.generated %>"].concat(app.concat_sourcemap.css.src)
 
     watch:
       less:

@@ -1,13 +1,13 @@
 {
   "name": "lineman-less",
-  "title": "LESS plugin for Lineman, using grunt-contrib-less",
-  "description": "Provide LESS functionality to your Lineman application.",
+  "title": "less plugin for Lineman, using grunt-contrib-less",
+  "description": "Compiles less templates to CSS in your Lineman application.",
   "keywords": [
     "lineman",
     "grunt",
     "less"
   ],
-  "version": "0.0.2",
+  "version": "0.0.1",
   "homepage": "http://www.linemanjs.com",
   "author": {
     "name": "Justin Searls",
@@ -27,13 +27,15 @@
   },
   "main": "index",
   "dependencies": {
-    "grunt-contrib-less": "~0.7.0"
-  },
-  "devDependencies": {
-    "coffee-script": "~1.6.3"
+    "grunt-contrib-less": "~0.10.0",
+    "coffee-script": "~1.7.1",
+    "find-root-package": "0.0.1"
   },
   "peerDependencies": {
     "lineman": ">= 0.27.0"
+  },
+  "scripts": {
+    "postinstall": "node script/postinstall.js"
   },
   "licenses": [
     {
