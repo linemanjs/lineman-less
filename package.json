@@ -1,0 +1,44 @@
+{
+  "name": "lineman-less",
+  "title": "LESS plugin for Lineman, using grunt-contrib-less",
+  "description": "Provide LESS functionality to your Lineman application.",
+  "keywords": [
+    "lineman",
+    "grunt",
+    "less"
+  ],
+  "version": "0.0.2",
+  "homepage": "http://www.linemanjs.com",
+  "author": {
+    "name": "Justin Searls",
+    "company": "Test Double",
+    "email": "justin@testdouble.com"
+  },
+  "contributors": [{
+    "name": "Jay Harris",
+    "email": "jay@aranasoft.com"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/linemanjs/lineman-less.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linemanjs/lineman-less/issues"
+  },
+  "main": "index",
+  "dependencies": {
+    "grunt-contrib-less": "~0.7.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
+  },
+  "peerDependencies": {
+    "lineman": ">= 0.27.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mit-license.org"
+    }
+  ]
+}
