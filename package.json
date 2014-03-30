@@ -31,6 +31,10 @@
   "peerDependencies": {
     "lineman": ">= 0.27.0"
   },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-release": "^0.7.0"
+  },
   "licenses": [
     {
       "type": "MIT",
