@@ -23,7 +23,7 @@ module.exports = (lineman) ->
 
     concat_sourcemap:
       css:
-        src: ["<%= files.less.generated %>"].concat(app.concat_sourcemap.css.src)
+        src: app.concat_sourcemap.css.src.concat("<%= files.less.generated %>")
 
     watch:
       less:
