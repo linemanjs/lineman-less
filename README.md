@@ -5,5 +5,5 @@ A plugin to make it easy to use Less in conjunction with a [Lineman](http://line
 ## Installation
 
 ```bash
-$ npm install lineman-less --save
+$ npm install --save-dev lineman-less
 ```
