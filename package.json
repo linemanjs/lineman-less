@@ -1,7 +1,7 @@
 {
   "name": "lineman-less",
   "description": "A Less plugin for Lineman, using grunt-contrib-less",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/linemanjs/lineman-less",
   "author": {
     "name": "Justin Searls",
@@ -29,7 +29,7 @@
     "grunt-contrib-less": "^3.0.0"
   },
   "peerDependencies": {
-    "lineman": ">= 0.27.0"
+    "lineman": ">= 0.38.0"
   },
   "devDependencies": {
     "grunt": "^0.4.4",
