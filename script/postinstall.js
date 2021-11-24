@@ -1,4 +1,4 @@
-require('coffee-script/register');
+require('coffeescript/register');
 
 initializesMainLessFile = require('./../lib/initializes-main-less-file');
 
