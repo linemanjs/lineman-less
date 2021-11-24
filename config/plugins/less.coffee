@@ -21,12 +21,12 @@ module.exports = (lineman) ->
         files:
           "<%= files.less.generated %>": "<%= files.less.main %>"
 
-    concat_sourcemap:
+    concat:
       css:
-        src: app.concat_sourcemap.css.src.concat("<%= files.less.generated %>")
+        src: app.concat.css.src.concat("<%= files.less.generated %>")
 
     watch:
       less:
         files: ["<%= files.less.vendor %>", "<%= files.less.app %>"]
-        tasks: ["less", "concat_sourcemap:css"]
+        tasks: ["less", "concat:css"]
 
